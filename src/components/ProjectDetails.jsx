@@ -1,0 +1,33 @@
+import github from "../assets/github.svg"
+import website from "../assets/website.svg"
+
+export default function ProjectDetails(props){
+    return(
+        <div onMouseLeave={()=>props.handleMouse(props.id)} >
+             <section className="project-details">
+                <img src={props.data.picture} alt="twitter" />
+                <div className="detail--page">
+                    <div className="project--text">
+                        <h4>{props.data.title}</h4>
+                        <p>{props.data.description}
+                        </p>
+                    </div>
+                    <div className="project--technologies">
+                        <h5 >Technologies Used:</h5>
+                        <p>{props.data.technologies}</p>
+                    </div>
+                    <div className="project--links">
+                        <div className="project--link">
+                            <img src={github} alt="" />
+                            <a href={props.data.github}>GitHub</a>
+                        </div>
+                        <div className="project--link">
+                            <img src={website} alt="" />
+                            <a href={props.data.website}>Live Website</a>
+                        </div>
+                    </div>
+                </div>
+             </section>
+        </div>
+    )
+}
