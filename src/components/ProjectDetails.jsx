@@ -5,7 +5,7 @@ export default function ProjectDetails(props){
     return(
         <div className='project-details-holder'  >
              <section className="project-details" onMouseLeave={()=>props.handleMouse(props.id)}>
-                <img src={props.data.picture} alt="twitter" />
+                <img src={props.data.picture} alt="app-picture" />
                 <div className="detail--page">
                     <div className="project--text">
                         <h4>{props.data.title}</h4>

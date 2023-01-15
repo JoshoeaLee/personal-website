@@ -8,7 +8,9 @@ export default function AboutMe() {
     <section id='about'>
         <h1>About Me</h1>
         <div className='about-card'>
-                <img className='profile-pic'src={profile} alt='Joshua Lee' style={{height: "70%", borderRadius: '60%' }} />
+                <div className='image-holder'>
+                    <img className='profile-pic'src={profile} alt='Joshua Lee' style={{height: "70%", borderRadius: '60%' }} />
+                </div>
                 <div className='about-text'>
                     <h4>Translating my Skillset</h4>
                     <p>Hi there! My name is Josh and I'm an ex-translator/interpreter aiming to be a

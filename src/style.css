@@ -1,3 +1,11 @@
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
 h1{
   font-size: 8em;
 }
@@ -37,7 +45,7 @@ p{
 
 #about, #experience{
   background-color: #121212;
-  height: 120vh;
+  min-height: 120vh;
   width: 100vw;
   color: aliceblue;
   
@@ -53,9 +61,10 @@ p{
   padding-left: 30px;
 }
 
+
 .about-card{
-  height: 60%;
-  width: 75%;
+  height: 72vh;
+  width: 75vw;
   border: 4px aliceblue solid;
   border-radius: 8px;
   margin: auto;
@@ -67,14 +76,21 @@ p{
   gap: 10%;
 }
 
+.image-holder{
+  width: 30%;
+}
+.profile-pic{
+  width: 100%;
+}
+
 .about-text{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: 'League Spartan', sans-serif
-  
+  font-family: 'League Spartan', sans-serif;
+  width: 50%;
 }
 
 .work-experience, .technical-skills, #projects{
@@ -91,12 +107,6 @@ p{
 }
 
 
-.content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 .project-cover-holder, .project-details-holder{
   width: 80vw;
