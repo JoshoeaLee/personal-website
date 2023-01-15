@@ -1,9 +1,14 @@
 import { useState } from 'react'
-import Hero from './Hero'
-import Footer from './Footer'
+import NavBar from './NavBar'
+import Header from './Header'
+import AboutMe from './AboutMe'
+import Experience from './Experience'
+import Footer from './ContactMe'
 import projectData from '../../projects'
 import ProjectDetails from './ProjectDetails'
 import ProjectCover from './ProjectCover'
+import '../style.css';
+
 
 export default function App() {
 
@@ -46,9 +51,14 @@ const allProjects = projects.map(singleProject=>{
 
   return (
     <div className='content'>
-      <Hero/>
-      <h3>Projects</h3>
-      {allProjects}
+      <NavBar />
+      <Header/>
+      <AboutMe />
+      <div id='projects'>
+        <h2 className='mt-5'>Selected Projects</h2>
+        {allProjects}
+      </div>
+      <Experience />
       <Footer />
     </div>
   )

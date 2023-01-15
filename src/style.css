@@ -1,10 +1,9 @@
-body{
-  margin: 0;
-  padding: 0;
+h1{
+  font-size: 8em;
 }
 
-h1{
-  font-size: 7em;
+h2{
+  font-size: 6em;
 }
 
 h3{
@@ -20,48 +19,93 @@ h5{
   font-size: 1.5em;
 }
 
-br{
-  height: 10%;
-}
 
 p{
   font-weight: 300;
+  font-size: 0.85em;
 }
 
-.hero{
-  width: 100vw;
+#header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer{
   width: 100vw;
-  height: 50vh;
+  font-family: 'League Spartan', sans-serif
+}
+
+#about, #experience{
+  background-color: #121212;
+  height: 120vh;
+  width: 100vw;
+  color: aliceblue;
+  
+}
+
+
+
+#contact{
+  width: 100vw;
+  height: 10vh;
+  background-color: aliceblue;
+  color: #121212;
+  padding-left: 30px;
+}
+
+.about-card{
+  height: 60%;
+  width: 75%;
+  border: 4px aliceblue solid;
+  border-radius: 8px;
+  margin: auto;
+  padding: 2em;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10%;
+}
+
+.about-text{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  font-family: 'League Spartan', sans-serif
+  
 }
 
-.hero>img{
-  max-width: 10vh;
-  display: block;
-  position: absolute;
-  bottom: 10vh;
-
+.work-experience, .technical-skills, #projects{
+  font-family: 'League Spartan', sans-serif;
 
 }
+
+#projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10%;
+  min-height: 100%;
+}
+
 
 .content{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 150px;
 }
+
+.project-cover-holder, .project-details-holder{
+  width: 80vw;
+  height: 72vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .project-cover, .project-details{
   width: 80vw;
@@ -69,34 +113,27 @@ p{
   min-height: 250px;
   border: 4px black solid;
   border-radius: 5%;
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: black;
   font-family: 'League Spartan', sans-serif;
-  gap: 40px;
 }
 
-.project-details{
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
 
-}
+
 
 .project-details >img{
-  padding: 10px;
-  width: auto;
-  height: 100%;
-  grid-column: 1/3;
-  grid-row: 2/4;
+  width: 30%;
 }
 
 .detail--page{
-  grid-column: 2/-1;
-  grid-row: 1/-1;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 5%;
+  gap: 4%;
 }
 
 .project--text, .project--technologies{

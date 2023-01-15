@@ -11,7 +11,11 @@
   "dependencies": {
     "@formkit/auto-animate": "^1.0.0-beta.5",
     "animate.css": "^4.1.1",
+    "axios": "^1.2.2",
+    "bootstrap": "^5.2.3",
+    "mdb-react-ui-kit": "^5.1.0",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {

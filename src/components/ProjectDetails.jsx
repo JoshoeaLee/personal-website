@@ -3,8 +3,8 @@ import website from "../assets/website.svg"
 
 export default function ProjectDetails(props){
     return(
-        <div onMouseLeave={()=>props.handleMouse(props.id)} >
-             <section className="project-details">
+        <div className='project-details-holder'  >
+             <section className="project-details" onMouseLeave={()=>props.handleMouse(props.id)}>
                 <img src={props.data.picture} alt="twitter" />
                 <div className="detail--page">
                     <div className="project--text">
