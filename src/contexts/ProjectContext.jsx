@@ -16,4 +16,12 @@ export const ProjectProvider = ({children})=>{
         .then((response)=>response.json())
         .then((data)=>console.log(data[2].projectTitle));
     }
+
+    return (
+        <ProjectContext.Provider value ={{  
+            getProjects,
+        }}>
+            {children}
+        </ProjectContext.Provider>
+    )
 }
