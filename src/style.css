@@ -53,13 +53,22 @@ p{
 
 
 
-#contact{
+#contact, #contact>a{
   width: 100vw;
   height: 10vh;
   background-color: aliceblue;
   color: #121212;
   padding-left: 30px;
+  padding-right: 30px;
 }
+
+#contact>*{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 
 .about-card{
@@ -130,12 +139,25 @@ p{
   font-family: 'League Spartan', sans-serif;
 }
 
+.project-cover{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.project-cover>*{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
 
 
 
 .project-details >img{
   width: 30%;
+  border-radius: 40%;
+
 }
+
 
 .detail--page{
   width: 60%;

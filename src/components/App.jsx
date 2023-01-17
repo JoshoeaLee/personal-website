@@ -28,22 +28,23 @@ const allProjects = projects.map(singleProject=>{
 
   if(singleProject.detailMode){
     return(
-      <ProjectDetails
+        <ProjectDetails
+            key={singleProject.id}
+            id={singleProject.id}
+            data={singleProject}
+            handleMouse={handleProjectMouse}
+            />
+    )
+  }
+  else{
+    return(
+        <ProjectCover
           key={singleProject.id}
           id={singleProject.id}
           data={singleProject}
           handleMouse={handleProjectMouse}
           />
-    )
-  }
-  else{
-    return(
-      <ProjectCover
-        key={singleProject.id}
-        id={singleProject.id}
-        data={singleProject}
-        handleMouse={handleProjectMouse}
-        />
+
     )
   }
 })

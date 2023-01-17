@@ -21,10 +21,10 @@ export default function ProjectDetails(props){
                             <img src={github} alt="" />
                             <a href={props.data.github}>GitHub</a>
                         </div>
-                        <div className="project--link">
+                        {props.data.websiteAvailable && <div className="project--link">
                             <img src={website} alt="" />
                             <a href={props.data.website}>Live Website</a>
-                        </div>
+                        </div>}
                     </div>
                 </div>
              </section>
