@@ -21,8 +21,8 @@ export default {
                 "picture": "https://joshportfolioprojectpics.blob.core.windows.net/project-images/portfolio-app-pic.png",
                 "description": "A full stack website with React.js being used for the front end and ASP.NET Core and Microsoft SQL Server being used for the back end. Deployed using Azure web app services.",
                 "technologies": "React.js, ASP.NET Core, C#, Microsoft SQL Server, Azure Web App Services",
-                "github": "",
-                "website": "joshualee.co.nz",
+                "github": "https://github.com/JoshoeaLee/personal-website",
+                "website": "https://joshualee.co.nz",
                 "detailMode": false,
                 "websiteAvailable": true
             },
@@ -33,7 +33,7 @@ export default {
                 "picture": "https://joshportfolioprojectpics.blob.core.windows.net/project-images/gym-app-pic.png",
                 "description": "My first full React.js web app. Uses props, state, custom hooks (hooks found online), local storage and context to operate. Styled using React Bootstrap. Deployed using Netlify.",
                 "technologies": "React.js, React-Bootstrap, Netlify",
-                "github": "",
+                "github": "https://github.com/JoshoeaLee/react-gym-progress-tracker",
                 "website": "https://jazzy-capybara-c51748.netlify.app/",
                 "detailMode": false,
                 "websiteAvailable": true
@@ -45,7 +45,7 @@ export default {
                 "picture": "https://joshportfolioprojectpics.blob.core.windows.net/project-images/ticket-app-pic.png",
                 "description": "A rough draft of a ‘Ticket Master’-like service written in Java using Java-FX. Automated testing is used for unit testing and stress testing. User stories were used as part of the creation process. This project was made in a group with people from vastly different backgrounds and skill levels, allowing me to polish my communication, leadership and collaboration abilities.",
                 "technologies": "Java, Java-FX, Automated Testing (J-Tests), Figma, Miro, Visual Studio, Trello",
-                "github": "",
+                "github": "https://github.com/JoshoeaLee/ticket-boss",
                 "website": "",
                 "detailMode": false,
                 "websiteAvailable": false
@@ -57,7 +57,7 @@ export default {
                 "picture": "https://joshportfolioprojectpics.blob.core.windows.net/project-images/message-app-pic.png",
                 "description": "A live messaging app which has a server side and client sides with messages being stored in an intermediatory Azure SQL database. Individual session keys(AES) are created for clients which are encrypted using asymmetrical encryption methods (RSA). (Originally deployed on an Azure VM but then taken off to save money)",
                 "technologies": "Java, Java-FX, Azure SQL, RSA/AES Encryption, Azure VM",
-                "github": "",
+                "github": "https://github.com/JoshoeaLee/JoshBookServer",
                 "website": "",
                 "detailMode": false,
                 "websiteAvailable": false
@@ -69,7 +69,7 @@ export default {
                 "picture": "https://joshportfolioprojectpics.blob.core.windows.net/project-images/weather-app-pic.png",
                 "description": "A weather web app with registering and sign-in capabilities which allows users to get personalized warnings regarding the weather to come for the day where they are. User settings are stored on a MySQL database.",
                 "technologies": "PHP, JavaScript, HTML, CSS, MySQL, 3rd Party API",
-                "github": "",
+                "github": "https://github.com/JoshoeaLee/Personalized-Weather-App/",
                 "website": "",
                 "detailMode": false,
                 "websiteAvailable": false
