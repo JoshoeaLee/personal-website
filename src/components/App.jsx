@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import NavBar from './NavBar'
 import Header from './Header'
 import AboutMe from './AboutMe'
@@ -7,13 +7,24 @@ import Footer from './ContactMe'
 import projectData from '../../projects'
 import ProjectDetails from './ProjectDetails'
 import ProjectCover from './ProjectCover'
+import MobileProject from './MobileProject'
 import '../style.css';
+import MobileAboutMe from './MobileAboutMe'
+import MobileHeader from './MobileHeader'
+import MobileExperience from './MovileExperience'
 
 
 export default function App() {
 
 
 const [projects, setProjects] = useState(projectData.data.projects)
+const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+useEffect(()=>{
+  window.addEventListener('resize', function(){
+    setWindowWidth(window.innerWidth)
+  })
+}, [])
 
 function handleProjectMouse(id){
     setProjects(prevProjects=>{
@@ -25,6 +36,17 @@ function handleProjectMouse(id){
 
 const allProjects = projects.map(singleProject=>{
 
+  if(windowWidth<=700){
+    return(
+    <MobileProject
+        key={singleProject.id}
+        id={singleProject.id}
+        data={singleProject}
+    />
+    )
+
+  }
+  else{
 
   if(singleProject.detailMode){
     return(
@@ -47,19 +69,23 @@ const allProjects = projects.map(singleProject=>{
 
     )
   }
-})
+}})
 
 
   return (
     <div className='content'>
       <NavBar />
-      <Header/>
-      <AboutMe />
+      
+      {windowWidth>700? <Header/>: <MobileHeader />}
+      {windowWidth>700? <AboutMe />: <MobileAboutMe/>}
+
       <div id='projects'>
-        <h2 className='mt-5'>Selected Projects</h2>
+        {windowWidth>700? <h2 className='mt-5'>Selected Projects</h2> : <h4 className='mt-5'>Selected Projects</h4>}
         {allProjects}
       </div>
-      <Experience />
+
+      {windowWidth>700? <Experience />: <MobileExperience/>}
+
       <Footer />
     </div>
   )

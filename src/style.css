@@ -45,7 +45,7 @@ p{
 
 #about, #experience{
   background-color: #121212;
-  min-height: 120vh;
+  min-height: 100vh;
   width: 100vw;
   color: aliceblue;
   
@@ -53,7 +53,7 @@ p{
 
 
 
-#contact, #contact>a{
+#contact, #contact>a, #contact::after{
   width: 100vw;
   height: 10vh;
   background-color: aliceblue;
@@ -61,6 +61,8 @@ p{
   padding-left: 30px;
   padding-right: 30px;
 }
+
+
 
 #contact>*{
   display: flex;
@@ -88,6 +90,7 @@ p{
 .image-holder{
   width: 30%;
 }
+
 .profile-pic{
   width: 100%;
 }
@@ -206,5 +209,32 @@ p{
   grid-column: 1/2;
   margin: auto;
   
+}
+
+.about-text-mobile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'League Spartan', sans-serif;
+
+}
+
+.mobile-holder{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.mobile-holder>section, .mobile-holder>img{
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.mobile-holder>img{
+  width: 50%;
+  opacity: 40%;
+  margin: auto;
 }
 

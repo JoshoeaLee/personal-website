@@ -1,15 +1,11 @@
 import React from 'react'
-import '../style.css';
 import {Stack} from 'react-bootstrap'
 
 
-export default function Experience() {
+export default function MobileExperience() {
     return (
-        <section id='experience'>
-            <Stack>
-             <h1 className='ms-auto'>Experience</h1>
-            </Stack>
-            <Stack gap={3} className='work-experience ms-5'>
+        <section id='experience' style={{display:'flex', flexDirection:'column', justifyContent: 'center', alignItems: 'center'}}>
+            <Stack gap={3} className='work-experience mt-3 ms-3'>
                 <h3>Work Experience</h3>
                 <h5>Japanese to English Translator</h5>
                 <p>Translated and localised documents and video games from Japanese to English while regularly keeping in contact with an end client to make sure all requirements are met and to adapt to any sudden changes.  This was all performed in a heavily time-restricted and high pressure environment.</p>
@@ -18,7 +14,7 @@ export default function Experience() {
                 <h5>Teaching Assistant</h5>
                 <p>Developed my own organisational and time-management skills as I managed students and acted as a leader in having them set up local sports festivals to stimulate community growth. Required speaking in Japanese, Korean and English.</p>
             </Stack>
-            <Stack gap={3} className='technical-skills ms-5'>
+            <Stack gap={3} className='technical-skills ms-3 mt-3'>
                 <h3>Technical Skills</h3>
                 <h5>Programming Languages</h5>
                 <p>JavaScript, Java, Python, C#, PHP</p>
