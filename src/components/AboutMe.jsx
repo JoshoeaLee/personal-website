@@ -1,6 +1,4 @@
-import React from 'react'
 import profile from '../assets/work-profile.jpg'
-import '../style.css';
 
 
 export default function AboutMe() {

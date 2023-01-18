@@ -1,6 +1,5 @@
 import down from '../assets/down.svg';
 import {  Stack } from "react-bootstrap";
-import '../style.css';
 
 
 export default function Header(){

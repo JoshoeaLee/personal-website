@@ -7,7 +7,6 @@ import Footer from './ContactMe'
 import ProjectDetails from './ProjectDetails'
 import ProjectCover from './ProjectCover'
 import MobileProject from './MobileProject'
-import '../style.css';
 import MobileAboutMe from './MobileAboutMe'
 import MobileHeader from './MobileHeader'
 import MobileExperience from './MovileExperience'
@@ -55,40 +54,42 @@ function handleProjectMouseOff(id){
 
 const allProjects = projects.map(singleProject=>{
 
-  if(windowWidth<=700){
-    return(
-    <MobileProject
-        key={singleProject.id}
-        id={singleProject.id}
-        data={singleProject}
-    />
-    )
-
-  }
-  else{
-
-  if(singleProject.detailMode=='false'){
-    return(
-      <ProjectCover
-          key={singleProject.id}
-          id={singleProject.id}
-          data={singleProject}
-          handleMouse={handleProjectMouseOn}
-      />
-        
-    )
-  }
-  else{
-    return(
-      <ProjectDetails
+  if(windowWidth>700){
+    if(singleProject.detailMode=='false'){
+      return(
+        <ProjectCover
             key={singleProject.id}
             id={singleProject.id}
             data={singleProject}
-            handleMouse={handleProjectMouseOff}
-      />
-       
-    )
+            handleMouse={handleProjectMouseOn}
+        />
+          
+      )
+    }
+    else{
+      return(
+        <ProjectDetails
+              key={singleProject.id}
+              id={singleProject.id}
+              data={singleProject}
+              handleMouse={handleProjectMouseOff}
+        />
+         
+      )
+    }
+    
+
   }
+  else{
+    return(
+      <MobileProject
+          key={singleProject.id}
+          id={singleProject.id}
+          data={singleProject}
+      />
+      )
+
+  
 }})
 
 

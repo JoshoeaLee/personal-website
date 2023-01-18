@@ -1,5 +1,3 @@
-import React from 'react'
-import '../style.css';
 import {Stack} from 'react-bootstrap'
 
 
