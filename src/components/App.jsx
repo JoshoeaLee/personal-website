@@ -18,7 +18,7 @@ import { useProjects } from '../contexts/ProjectContext'
 export default function App() {
 
 
-const [projects, setProjects] = useState(projectData.data.projects)
+const [projects, setProjects] = useState([])
 const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
 useEffect(()=>{

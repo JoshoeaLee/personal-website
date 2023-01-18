@@ -12,7 +12,7 @@ export const ProjectProvider = ({children})=>{
 
     async function getProjects(){
 
-        const response = await fetch('https://localhost:7115/Projects')
+        const response = await fetch('https://portfolioprojectsapi.azurewebsites.net/Projects')
         const json = await response.json()
         return json        
     }

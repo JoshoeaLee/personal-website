@@ -23,8 +23,8 @@ export default {
                 "technologies": "React.js, ASP.NET Core, C#, Microsoft SQL Server, Azure Web App Services",
                 "github": "https://github.com/JoshoeaLee/personal-website",
                 "website": "https://joshualee.co.nz",
-                "detailMode": false,
-                "websiteAvailable": true
+                "detailMode": "false",
+                "websiteAvailable": "true"
             },
             {
                 "id": "3",
@@ -35,8 +35,8 @@ export default {
                 "technologies": "React.js, React-Bootstrap, Netlify",
                 "github": "https://github.com/JoshoeaLee/react-gym-progress-tracker",
                 "website": "https://jazzy-capybara-c51748.netlify.app/",
-                "detailMode": false,
-                "websiteAvailable": true
+                "detailMode": "false",
+                "websiteAvailable": "true"
             },
             {
                 "id": "4",
@@ -47,8 +47,8 @@ export default {
                 "technologies": "Java, Java-FX, Automated Testing (J-Tests), Figma, Miro, Visual Studio, Trello",
                 "github": "https://github.com/JoshoeaLee/ticket-boss",
                 "website": "",
-                "detailMode": false,
-                "websiteAvailable": false
+                "detailMode": "false",
+                "websiteAvailable": "false"
             },
             {
                 "id": "5",
@@ -59,8 +59,8 @@ export default {
                 "technologies": "Java, Java-FX, Azure SQL, RSA/AES Encryption, Azure VM",
                 "github": "https://github.com/JoshoeaLee/JoshBookServer",
                 "website": "",
-                "detailMode": false,
-                "websiteAvailable": false
+                "detailMode": "false",
+                "websiteAvailable": "false"
             },
             {
                 "id": "6",
@@ -71,8 +71,8 @@ export default {
                 "technologies": "PHP, JavaScript, HTML, CSS, MySQL, 3rd Party API",
                 "github": "https://github.com/JoshoeaLee/Personalized-Weather-App/",
                 "website": "",
-                "detailMode": false,
-                "websiteAvailable": false
+                "detailMode": "false",
+                "websiteAvailable": "false"
             },
         ]
     }
