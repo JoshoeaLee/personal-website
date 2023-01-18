@@ -12,6 +12,7 @@ import '../style.css';
 import MobileAboutMe from './MobileAboutMe'
 import MobileHeader from './MobileHeader'
 import MobileExperience from './MovileExperience'
+import { useProjects } from '../contexts/ProjectContext'
 
 
 export default function App() {
@@ -26,12 +27,31 @@ useEffect(()=>{
   })
 }, [])
 
-function handleProjectMouse(id){
+const {getProjects} = useProjects()
+
+async function getProjectData(){
+  const myProjectData = await getProjects()
+  setProjects(myProjectData)
+}
+
+useEffect(()=>{
+  getProjectData()
+}, [])
+
+function handleProjectMouseOn(id){
     setProjects(prevProjects=>{
       return prevProjects.map((project) =>{
-        return project.id === id ? {...project, detailMode: !project.detailMode} : project
+        return project.id === id ? {...project, detailMode: "true"} : project
       })
     })
+}
+
+function handleProjectMouseOff(id){
+  setProjects(prevProjects=>{
+    return prevProjects.map((project) =>{
+      return project.id === id ? {...project, detailMode: "false"} : project
+    })
+  })
 }
 
 const allProjects = projects.map(singleProject=>{
@@ -48,25 +68,26 @@ const allProjects = projects.map(singleProject=>{
   }
   else{
 
-  if(singleProject.detailMode){
+  if(singleProject.detailMode=='false'){
     return(
-        <ProjectDetails
-            key={singleProject.id}
-            id={singleProject.id}
-            data={singleProject}
-            handleMouse={handleProjectMouse}
-            />
+      <ProjectCover
+          key={singleProject.id}
+          id={singleProject.id}
+          data={singleProject}
+          handleMouse={handleProjectMouseOn}
+      />
+        
     )
   }
   else{
     return(
-        <ProjectCover
-          key={singleProject.id}
-          id={singleProject.id}
-          data={singleProject}
-          handleMouse={handleProjectMouse}
-          />
-
+      <ProjectDetails
+            key={singleProject.id}
+            id={singleProject.id}
+            data={singleProject}
+            handleMouse={handleProjectMouseOff}
+      />
+       
     )
   }
 }})

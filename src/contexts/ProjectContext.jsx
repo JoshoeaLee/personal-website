@@ -12,9 +12,9 @@ export const ProjectProvider = ({children})=>{
 
     async function getProjects(){
 
-        await fetch('https://localhost:7115/Projects')
-        .then((response)=>response.json())
-        .then((data)=>console.log(data[2].projectTitle));
+        const response = await fetch('https://localhost:7115/Projects')
+        const json = await response.json()
+        return json        
     }
 
     return (
