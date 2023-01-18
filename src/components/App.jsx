@@ -96,7 +96,7 @@ const allProjects = projects.map(singleProject=>{
     <div className='content'>
       <NavBar />
       
-      {windowWidth>700? <Header/>: <MobileHeader />}
+      {windowWidth>750? <Header/>: <MobileHeader />}
       {windowWidth>700? <AboutMe />: <MobileAboutMe/>}
 
       <div id='projects'>
