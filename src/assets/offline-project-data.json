@@ -1,0 +1,35 @@
+[
+        {
+            "id": "ProjectTwitter",
+            "title": "AWS Tagalog TwitterBot",
+            "description": " No longer works because of changes to the Twitter platform :(. A program written in Node.js which retrieves data from a MongoDB database via an API I made! AWS Lambda was then used to trigger the bot daily.",
+            "technologies": "Node.js, Express.js, MongoDB, AWS Lambda",
+            "github": "https://github.com/JoshoeaLee/tagalogTwitterBot",
+            "website": null,
+            "picture": "src/assets/app-pics/twitter-app-pic.png",
+            "icon": "src/assets/icons/birdicon.svg",
+            "detailMode": "false"
+        },
+        {
+            "id": "ProjectPersonalWebsite",
+            "title": "Personal Website",
+            "description": "Full stack website using React.js, ASP.NET Core and Microsoft SQL Server. Deployed using Azure and then redeployed on a free platform because of the price ;) ",
+            "technologies": "React.js, ASP.NET Core, C#, Microsoft SQL Server, Azure Web App Services",
+            "github": "https://github.com/JoshoeaLee/personal-website",
+            "website": "https://joshualee.co.nz/",
+            "picture": "src/assets/app-pics/portfolio-app-pic.png",
+            "icon": "src/assets/icons/livewebsiteicon.svg",
+            "detailMode": "false"
+        },
+        {
+            "id": "ProjectGymTracker",
+            "title": "Gym Progress Tracker",
+            "description": "Webapp which uses your browser's local storage to let you track your gym progress without having to save anything! (Currently making an IOS version as I'm lerning Swift. Stay tuned!) ",
+            "technologies": "React.js, React-Bootstrap",
+            "github": "https://github.com/JoshoeaLee/react-gym-progress-tracker",
+            "website": "https://jazzy-capybara-c51748.netlify.app/",
+            "picture": "src/assets/app-pics/gym-app-pic.png",
+            "icon": "src/assets/icons/gymicon.svg",
+            "detailMode": "false"
+        }
+]

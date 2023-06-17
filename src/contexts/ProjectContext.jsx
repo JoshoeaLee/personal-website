@@ -1,4 +1,5 @@
 import React, {useContext} from 'react'
+import offlineJson from '../assets/offline-project-data.json'
 
 const ProjectContext = React.createContext()
 

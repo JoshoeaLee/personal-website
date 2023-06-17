@@ -10,7 +10,8 @@ import MobileProject from './MobileProject'
 import MobileAboutMe from './MobileAboutMe'
 import MobileHeader from './MobileHeader'
 import MobileExperience from './MovileExperience'
-import { useProjects } from '../contexts/ProjectContext'
+//import { useProjects } from '../contexts/ProjectContext'  //USED FOR CLOUD VERSION
+import offlineData from '../assets/offline-project-data.json'
 
 
 export default function App() {
@@ -25,15 +26,25 @@ useEffect(()=>{
   })
 }, [])
 
-const {getProjects} = useProjects()
+//USED FOR CLOUD VERSION
+//-----------------------------------------------
+//const {getProjects} = useProjects()
 
-async function getProjectData(){
-  const myProjectData = await getProjects()
-  setProjects(myProjectData)
+// async function getProjectData(){
+//   const myProjectData = await getProjects()
+//   setProjects(myProjectData)
+// }
+//-------------------------------------------------
+
+async function getProjectDataOffline(){
+    const myProjectData = offlineData;
+    setProjects(myProjectData);
 }
 
+
 useEffect(()=>{
-  getProjectData()
+ // getProjectData()  CLOUD VERSION CODE
+   getProjectDataOffline();
 }, [])
 
 function handleProjectMouseOn(id){
