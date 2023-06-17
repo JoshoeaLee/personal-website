@@ -6,8 +6,8 @@
             "technologies": "Node.js, Express.js, MongoDB, AWS Lambda",
             "github": "https://github.com/JoshoeaLee/tagalogTwitterBot",
             "website": null,
-            "picture": "src/assets/twitter-app-pic.png",
-            "icon": "src/assets/birdicon copy.svg",
+            "picture": "https://raw.githubusercontent.com/JoshoeaLee/Assets/master/personal-website/app-pics/twitter-app-pic.png",
+            "icon": "https://raw.githubusercontent.com/JoshoeaLee/Assets/master/personal-website/icons/birdicon.svg",
             "detailMode": "false"
         },
         {
@@ -17,8 +17,8 @@
             "technologies": "React.js, ASP.NET Core, C#, Microsoft SQL Server, Azure Web App Services",
             "github": "https://github.com/JoshoeaLee/personal-website",
             "website": "https://joshualee.co.nz/",
-            "picture": "src/assets/portfolio-app-pic.png",
-            "icon": "src/assets/portfolioicon copy.svg",
+            "picture": "https://raw.githubusercontent.com/JoshoeaLee/Assets/master/personal-website/app-pics/portfolio-app-pic.png",
+            "icon": "https://raw.githubusercontent.com/JoshoeaLee/Assets/master/personal-website/icons/portfolioicon.svg",
             "detailMode": "false"
         },
         {
@@ -28,8 +28,8 @@
             "technologies": "React.js, React-Bootstrap",
             "github": "https://github.com/JoshoeaLee/react-gym-progress-tracker",
             "website": "https://jazzy-capybara-c51748.netlify.app/",
-            "picture": "src/assets/gym-app-pic.png",
-            "icon": "src/assets/gymicon copy.svg",
+            "picture": "https://raw.githubusercontent.com/JoshoeaLee/Assets/master/personal-website/app-pics/gym-app-pic.png",
+            "icon": "https://github.com/JoshoeaLee/Assets/raw/master/personal-website/icons/gymicon.svg",
             "detailMode": "false"
         }
 ]
