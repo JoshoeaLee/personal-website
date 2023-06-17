@@ -1,6 +1,6 @@
 # personal-website
 
-(Please note that projects do not currently load in as I have run out of credit on Azure :(  )
+(Projects originally loaded in via SQL but that cost money so it's all local now. Original code for when I was using SQL to load things in is still there, just commented out)
 
 A full stack website with React.js being used for the front end and ASP.NET Core and Microsoft SQL Server being used for the back end. 
 Deployed using Azure web app services and then taken down immediately after I saw the price.
