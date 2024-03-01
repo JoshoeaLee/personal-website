@@ -109,7 +109,7 @@ const allProjects = projects.map(singleProject=>{
       <NavBar />
       
       {windowWidth>750? <Header/>: <MobileHeader />}
-      {windowWidth>700? <AboutMe />: <MobileAboutMe/>}
+      {/* {windowWidth>700? <AboutMe />: <MobileAboutMe/>}
 
       <div id='projects'>
         {windowWidth>700? <h2 className='mt-5'>Selected Projects</h2> : <h4 className='mt-5'>Selected Projects</h4>}
@@ -118,7 +118,7 @@ const allProjects = projects.map(singleProject=>{
 
       {windowWidth>700? <Experience />: <MobileExperience/>}
 
-      <Footer />
+      <Footer /> */}
     </div>
   )
 }
